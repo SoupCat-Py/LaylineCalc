@@ -8,3 +8,5 @@ Included here are:
 - original .py file in case you want to see the code or you're just on mac (i can't make a .dmg)
 - an icon for the app
 - fonts used in the app
+
+*some features may not work on mac*
