@@ -220,7 +220,7 @@ def logCoords(filePath):
         file.write(f"Calculated at {dt}\n")
         file.write(f"Coordinates 1: ({lat1}, {long1}), Coordinates 2: ({lat2}, {long2})\n")
         file.write(f"Total Distance: {distance}\n")
-        file.write(f"Distance from major long: {distance}\n")
+        file.write(f"Distance from major long: {distance/2}\n")
         file.write("Laylines at longitudes:\n")
         file.write(f"{verticalResult}\n")
         file.write("-" * 40 + "\n")  # Divider for readability
@@ -311,7 +311,7 @@ while True:
     elif event == 'calc':
         if not calcDisable:
             calculate()
-            sg.Popup(f'''Distance between major longitude and layline: {str(round((distance),2))}°
+            sg.Popup(f'''Distance between major longitude and layline: {str(round((distance/2),2))}°
 
 Laylines at longitudes:
 
